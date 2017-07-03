@@ -186,6 +186,11 @@
 			{
 				circle[i].fillColor.hue += 1;
 				circle[i].scale(.9);
+				if(circle[i].area < 1)
+				{
+      				circle[i].remove();
+      				circle.splice(i, 1);
+    			}
 			}
 			
 		}
